@@ -1,3 +1,11 @@
+"""
+Date Difference calculator
+
+This script allows the user to input two dates and it will calculate the
+number of days between them.
+
+It accepts two dates as argumentsin the format DD MM YYYY.
+"""
 import argparse
 import datetime
 
@@ -60,7 +68,20 @@ def calculate_days(date):
 
 
 def date_difference(date1, date2):
-    """ Calculate difference between two dates """
+    """"Calculate difference between two dates
+
+    Parameters
+    ----------
+    date1 : str
+        First date in DD MM YYYY format
+    date2 : str
+        Second date in DD MM YYYY format
+
+    Returns
+    -------
+    tuple 
+        Tuple of dates in ascending order and difference between them
+    """
     num_of_days = 0
     if validate_date(date1) and validate_date(date2):
         if not check_same_date(date1, date2):
