@@ -72,10 +72,8 @@ def date_difference(date1, date2):
 
     Parameters
     ----------
-    date1 : str
-        First date in DD MM YYYY format
-    date2 : str
-        Second date in DD MM YYYY format
+    date1 : date in format DD MM YYYY
+    date2 : date in format DD MM YYYY
 
     Returns
     -------
